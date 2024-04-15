@@ -241,7 +241,6 @@ StreamingRecognizeClient::DoStreamingFromFile(
         }
       }
       
-	    std::cout << "Par time"<<par_time_in_millis<<std::endl;
       std::unique_ptr<Stream> stream(new Stream(all_wav_repeated[all_wav_i], all_wav_i));
       StartNewStream(std::move(stream));
       ++all_wav_i;
